@@ -38,14 +38,10 @@ const scrub = (e) => {
 	video.currentTime = scrubTime;
 };
 
-const playerWidth = video.videoWidth;
-const playerHeight = video.videoHeight;
-
 const toggleFullScreen = () => {
 	if (player.requestFullscreen) {
 		player.requestFullscreen();
 		video.style.height = '100%';
-		console.log(video.style.height);
 	}
 };
 
